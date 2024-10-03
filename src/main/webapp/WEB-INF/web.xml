@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+	<welcome-file-list>
+	<welcome-file>trackState.html</welcome-file>
+	  <welcome-file>home.html</welcome-file>
+	  <welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	
+	
+	
+	
+	<servlet>
+        <servlet-name>st2</servlet-name>
+        <servlet-class>com.servlets.St2</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>st2</servlet-name>
+        <url-pattern>/st2</url-pattern>
+    </servlet-mapping>
+    
+	
+	
+	
+	
+	<servlet>
+        <servlet-name>st3</servlet-name>
+        <servlet-class>com.servlets.St3</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>st3</servlet-name>
+        <url-pattern>/st3</url-pattern>
+    </servlet-mapping>
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+    <!-- Servlet Declaration -->
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>com.servlets.FirstServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/formServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+    	<servlet-name>s1</servlet-name>
+    	<servlet-class>com.servlets.S1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>s1</servlet-name>
+    	<url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+       <servlet>
+    	<servlet-name>s2</servlet-name>
+    	<servlet-class>com.servlets.S2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>s2</servlet-name>
+    	<url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>success</servlet-name>
+        <servlet-class>com.servlets.SuccessServlet</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    
+
+  
+  <session-config>
+  <session-timeout>30</session-timeout>
+  </session-config>
+
+</web-app>
